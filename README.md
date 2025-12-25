@@ -60,4 +60,28 @@ Contours are closed regions in the image which are obtained by the canny edge de
 
 Our aim is to estimate accurate count of object in the image. So we are going to develop a program which detects the objects in an image.The program should automatically detect the desire object and count the number of objects in that image by detecting the edges of an image. We are going to estimate density of image whose integral over any image region gives us count of objects within that region.
 
+Working Principle
 
+For webcam detection, each captured video frame is first converted into a grayscale image to reduce computational complexity. Blob detection using the Laplacian of Gaussian (LoG) method is then applied to identify object-like regions based on intensity variations. Each detected object is highlighted with a circular boundary, and the total number of objects is updated in real time on the video feed.
+
+Real-Time Object Counting
+
+As the webcam continuously captures frames, the object count is calculated for every frame independently. This makes the system capable of handling moving objects and changing scenes. The current object count is displayed directly on the live video window, providing instant feedback to the user.
+
+Advantages of Webcam Detection
+
+The webcam-based approach enables:
+
+Real-time monitoring of objects
+
+Detection of moving or changing objects
+
+Practical demonstration of image processing concepts
+
+Better understanding of segmentation and blob detection in live environments
+
+This mode is especially useful for applications such as droplet counting, object monitoring, and experimental computer vision demonstrations.
+
+User Interaction
+
+The webcam detection feature is accessible through the graphical user interface (GUI). When the user selects the real-time detection option, the webcam starts automatically and displays the processed live feed. The user can stop the real-time detection by closing the webcam window or using the assigned exit key.
