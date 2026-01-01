@@ -48,23 +48,13 @@ Contours are closed regions in the image which are obtained by the canny edge de
 
 ![image](https://user-images.githubusercontent.com/53599318/100910729-505f0080-34f4-11eb-9bef-9ddbd1ad31c6.png),![image](https://user-images.githubusercontent.com/53599318/100910772-5e148600-34f4-11eb-8f29-891c2dda4187.png)
 
-<h2>SUMMARY :</h2>
 
-• The separation of detection quality and detection quantity. New performance graphs allow us to easily perceive the detection quantity (“how many objects have been detected?” and “how many false alarms have been detected?”) as well as detection quality (“how accurate is the detection of the objects?”).
-
-• The influence of the data base is evaluated, i.e., the relationship between the performance of the detection algorithms and the structure of the image test database is put forward. This makes it easier to grasp the advantage an object detection algorithm might have when it is tested on an image collection which larger percentage of relevant information.
-
-• The derivation of a single performance value which does not depend on quality related thresholds. Although this performance value, by definition, does not allow us to fully comprehend the behaviour of a detection algorithm, it makes it easier to create a ranking of the algorithms to evaluate.
-
-<h2>CONCLUSION:</h2>
-
-Our aim is to estimate accurate count of object in the image. So we are going to develop a program which detects the objects in an image.The program should automatically detect the desire object and count the number of objects in that image by detecting the edges of an image. We are going to estimate density of image whose integral over any image region gives us count of objects within that region.
+  **Real-Time Object Counting**
 
 Working Principle
 
 For webcam detection, each captured video frame is first converted into a grayscale image to reduce computational complexity. Blob detection using the Laplacian of Gaussian (LoG) method is then applied to identify object-like regions based on intensity variations. Each detected object is highlighted with a circular boundary, and the total number of objects is updated in real time on the video feed.
 
-Real-Time Object Counting
 
 As the webcam continuously captures frames, the object count is calculated for every frame independently. This makes the system capable of handling moving objects and changing scenes. The current object count is displayed directly on the live video window, providing instant feedback to the user.
 
